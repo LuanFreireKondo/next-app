@@ -1,0 +1,106 @@
+:root {
+  --gray-200: #EEEEEE;
+  --gray-300: #DDDDDD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-800: #424242;
+  --gray-900: #212121;
+  --gray-50-300: #E0E0E0;
+
+  /* primary */
+  --primary: #323232;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* primary */
+    --primary: #EEEEEE;
+  }
+}
+
+* {
+  box-sizing: border-box;
+
+  /* no tap color - webkit */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body { 
+  height: 100%; 
+}
+
+body {
+  font-family: Poppins, Verdana;
+  font-size: 16px;
+  font-style: normal;
+  color: #424242;
+  flex-direction: column;
+  display: flex;
+}
+
+body > #__next {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: normal;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+p, button {
+  color: var(--gray-800);
+}
+
+p {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img, iframe {
+  border: 0px;
+  display: block;
+}
+
+input, select, textarea, button {
+  font-family: Poppins, Verdana;
+  font-size: 16px;
+  border: 0;
+  background-color: white;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #764Af1;
+  box-shadow: 0 0 0 2px rgb(118 74 241 / 10%);
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

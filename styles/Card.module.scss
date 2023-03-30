@@ -1,0 +1,11 @@
+.card {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-50-300);
+  padding: 24px;
+
+  & + .card {
+    margin-top: 24px;
+  }
+}
